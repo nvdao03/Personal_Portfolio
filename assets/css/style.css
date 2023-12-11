@@ -1,4 +1,6 @@
-* {
+*,
+::after,
+::before {
     box-sizing: border-box;
 }
 
@@ -51,6 +53,12 @@ a {
 .header {
     padding-top: 2rem;
     background-color: #fbfaff;
+}
+
+.fixed {
+    position: sticky;
+    z-index: 1;
+    top: -1rem;
 }
 
 .navbar {

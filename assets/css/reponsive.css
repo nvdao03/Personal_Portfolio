@@ -126,6 +126,52 @@
     .mobile-checkbox:checked ~ .menu-drawer {
         transform: translateX(0);
     }
+
+    /* ====== Hero ====== */
+    .hero-body {
+        flex-wrap: wrap;
+    }
+
+    .hero__decor {
+        display: none;
+    }
+
+    .hero-media {
+        order: 2;
+        width: 100%;
+        text-align: center;
+        margin-top: 10.4rem;
+    }
+
+    .hero-info {
+        width: 100%;
+        order: 1;
+        text-align: center;
+    }
+
+    .hero-info__desc {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-info-button {
+        justify-content: center;
+    }
+
+    .hero-info-follow {
+        display: none;
+    }
+
+    .hero-media__decor {
+        left: 0rem;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    /* ====== Hero ====== */
+    .hero__decor {
+        display: none;
+    }
 }
 
 /* Mobile */

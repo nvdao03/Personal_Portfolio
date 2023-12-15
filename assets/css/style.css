@@ -157,7 +157,6 @@ a {
 }
 
 .hero-info__heading {
-    width: 50rem;
     color: #080415;
     font-size: 8rem;
     font-weight: 500;
@@ -229,4 +228,6 @@ a {
 
 .hero__decor {
     position: absolute;
+    right: 0;
+    bottom: 0;
 }

@@ -30,6 +30,10 @@ body {
     background: #5d3bee;
 }
 
+.btn:hover {
+    opacity: 0.9;
+}
+
 .heading-section {
     color: #080415;
     font-style: normal;
@@ -57,7 +61,7 @@ a {
 
 .fixed {
     position: sticky;
-    z-index: 1;
+    z-index: 2;
     top: -1rem;
 }
 
@@ -110,4 +114,119 @@ a {
 
 .navbar-item__link:hover {
     text-shadow: 0 0 1px #000;
+}
+
+/* ========== Hero ========== */
+.hero {
+    padding-top: 4.4rem;
+    background-color: #fbfaff;
+}
+
+.hero-body {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 15.6rem;
+}
+
+.hero-media {
+    width: 44%;
+    position: relative;
+    height: 70.5rem;
+}
+
+.hero-media__decor {
+    position: absolute;
+    left: -9.4rem;
+    bottom: 0;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-media__img {
+    position: relative;
+    width: 51.4rem;
+    height: 70.5rem;
+    object-fit: cover;
+}
+
+.hero-info {
+    width: 43%;
+    position: relative;
+}
+
+.hero-info__heading {
+    width: 50rem;
+    color: #080415;
+    font-size: 8rem;
+    font-weight: 500;
+    line-height: 95%;
+    letter-spacing: -0.32rem;
+}
+
+.hero-info__desc {
+    width: 37rem;
+    margin-top: 2.5rem;
+}
+
+.hero-info-button {
+    display: flex;
+    align-items: center;
+    column-gap: 3rem;
+    margin-top: 5rem;
+}
+
+.hero-info-button__btn {
+    color: #080415;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1.66;
+    padding: 1rem 0;
+
+    transition: all 0.5s ease;
+}
+
+.hero-info-button__btn:hover {
+    text-decoration-line: underline;
+}
+
+.hero-info-follow {
+    display: flex;
+    align-items: center;
+    column-gap: 1.5rem;
+    margin-top: 10.4rem;
+}
+
+.hero-info-follow__title {
+    color: #51586a;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.87;
+}
+
+.hero-info-follow__list {
+    display: flex;
+}
+
+.hero-info-follow__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+}
+
+.hero-info-follow__item:hover {
+    cursor: pointer;
+}
+
+.hero-info-follow__item + .hero-info-follow__item {
+    margin-left: 2rem;
+}
+
+.hero__decor {
+    position: absolute;
 }

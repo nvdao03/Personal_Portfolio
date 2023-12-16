@@ -1,47 +1,61 @@
-/* Desktop and Tablet Pro */
-@media screen and (min-width: 992px) {
+/* X-Small devices (portrait phones, less than 576px) */
+/* No media query for `xs` since this is the default in Bootstrap */
+
+/* Large Desktop (1921px trở lên) */
+@media (min-width: 1920px) {
     .mobile-header {
         display: none;
     }
 }
 
-/* Tablet */
-@media screen and (min-width: 768px) and (max-width: 991.98px) {
+/* DDesktop (1441px - 1920px) */
+@media (min-width: 1440px) and (max-width: 1919.98px) {
+    .mobile-header {
+        display: none;
+    }
+}
+
+/* Laptop, Tablet Pro (1024px - 1440px) */
+@media (min-width: 1024px) and (max-width: 1439.98px) {
+    .mobile-header {
+        display: none;
+    }
+
     /* ====== Hero ====== */
-    .hero-info__desc {
+    .hero__decor {
+        display: none;
+    }
+
+    /* ====== Client ====== */
+    .client-body {
+        flex-direction: column;
+    }
+
+    .client-wrap {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+
+    .client-wrap__heading {
         margin-left: auto;
         margin-right: auto;
     }
 
-    .hero-info-button {
-        justify-content: center;
-    }
-
-    .hero-info-follow {
-        display: none;
-    }
-
-    .hero-media__decor {
-        left: 0rem;
-    }
-
-    .hero-info__heading,
-    .hero-info__desc,
-    .hero-media {
-        text-align: center;
-    }
-
-    .hero-media {
+    .client-block {
+        width: 100%;
         margin-top: 5rem;
+    }
+
+    .client-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
     }
 }
 
-/* Tablet and Mobile */
-@media screen and (max-width: 991.98px) {
-    .navbar-list {
-        display: none;
-    }
-
+/* Tablet, Tablet Mini (769px - 1024px) */
+@media (min-width: 768px) and (max-width: 1023.98px) {
     .header {
         display: none;
     }
@@ -172,18 +186,197 @@
         width: 100%;
         order: 1;
     }
-}
 
-/* Mobile */
-@media screen and (max-width: 767.98px) {
-    .menu-drawer {
-        left: 25%;
-        padding: 40px 0px 0px 40px;
+    .hero-info__desc {
+        margin-left: auto;
+        margin-right: auto;
     }
 
-    /* ====== Hero ====== */
+    .hero-info-button {
+        justify-content: center;
+    }
+
+    .hero-info-follow {
+        display: none;
+    }
+
+    .hero-media__decor {
+        left: 0rem;
+    }
+
+    .hero-info__heading,
+    .hero-info__desc,
+    .hero-media {
+        text-align: center;
+    }
+
+    .hero-media {
+        margin-top: 5rem;
+    }
+
+    /* ====== Client ====== */
+    .client-body {
+        flex-direction: column;
+    }
+
+    .client-wrap {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+
+    .client-wrap__heading {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .client-block {
+        width: 100%;
+        margin-top: 5rem;
+    }
+
+    .client-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+}
+
+/* Mobile (Dưới 600px) */
+@media (max-width: 767.98px) {
+    .header {
+        display: none;
+    }
+
+    /* =========== Tạo overlay =========== */
+    .mobile-overlay {
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.2);
+
+        opacity: 0;
+        visibility: hidden;
+        transition-property: opacity, visibility, background-color;
+        transition-duration: 0.5s;
+        transition-timing-function: ease;
+    }
+
+    .mobile-checkbox:checked ~ .mobile-overlay {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    /* =========== Navbar =========== */
+    .mobile-header {
+        padding-top: 2rem;
+        background: #fbfaff;
+    }
+
+    .fixed {
+        position: sticky;
+        z-index: 1;
+    }
+
+    .navbar-mobile {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 2rem;
+    }
+
+    .navbar-mobile-feaure {
+        display: flex;
+        column-gap: 1rem;
+    }
+
+    .navbar-mobile-email,
+    .navbar-mobile-toogle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 3.2rem;
+        height: 3.2rem;
+        border: 1px solid #5d3bee33;
+        border-radius: 50%;
+    }
+
+    .navbar-mobile-email__img {
+        display: inline-block;
+        padding: 1.04rem 0.77rem;
+    }
+
+    .navbar-mobile::after {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        border: 1px solid #d6d3e2;
+    }
+
+    /* =========== Menu drawer =========== */
+    .menu-drawer {
+        position: fixed;
+        z-index: 2;
+        top: 0;
+        left: 25%;
+        right: 0;
+        bottom: 0;
+        background-color: #fff;
+        padding: 40px 0px 0px 40px;
+
+        transform: translateX(100%);
+        transition: all 0.5s ease;
+    }
+
+    .menu-drawer-list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu-drawer-item {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu-drawer-item__link {
+        color: #51586a;
+        font-size: 1.8rem;
+        font-weight: 400;
+        padding: 2.2rem 0;
+    }
+
+    .mobile-checkbox:checked ~ .menu-drawer {
+        transform: translateX(0);
+    }
+
+    /* ========== Hero ========== */
     .hero {
         padding-top: 5.05rem;
+    }
+
+    .hero-body {
+        flex-wrap: wrap;
+    }
+
+    .hero__decor {
+        display: none;
+    }
+
+    .hero-media {
+        order: 2;
+        width: 100%;
+    }
+
+    .hero-info {
+        width: 100%;
+        order: 1;
     }
 
     .hero-info__heading {
@@ -247,18 +440,55 @@
         height: 35.5rem;
         object-fit: cover;
     }
-}
 
-/* Mobile small */
-@media screen and (max-width: 350px) {
-    .navbar-mobile::after {
-        display: none;
+    /* ========== Client ========== */
+    .client {
+        margin-top: 12rem;
+    }
+
+    .client-body {
+        flex-direction: column;
+    }
+
+    .client-wrap {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .client-wrap__decor {
+        width: 4.8rem;
+    }
+
+    .client-wrap__heading {
+        width: 16.9rem;
+        margin-left: auto;
+        margin-right: auto;
+        color: #080415;
+        text-align: center;
+        font-size: 2.8rem;
+        font-weight: 500;
+        line-height: 1.21;
+        letter-spacing: -0.112rem;
+    }
+
+    .client-block {
+        width: 100%;
+        margin-top: 4.2rem;
+    }
+
+    .client-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 3.4rem;
     }
 }
 
-@media screen and (max-width: 1200px) {
-    /* ====== Hero ====== */
-    .hero__decor {
-        display: none;
+/* Mobile (Dưới 390) */
+@media (max-width: 390px) {
+    .container {
+        width: 350px;
+        margin: 0 auto;
     }
 }

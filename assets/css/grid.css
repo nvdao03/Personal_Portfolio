@@ -3,20 +3,25 @@
 .container,
 .container-fluid {
     --column-size: 12;
-    --spacer: 10px;
+    --spacer-X: 10px;
+    --spacer-Y: 10px;
 
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding-left: calc(var(--spacer) / 2);
-    padding-right: calc(var(--spacer) / 2);
+    padding-left: calc(var(--spacer-X) / 2);
+    padding-right: calc(var(--spacer-X) / 2);
+    padding-top: calc(var(--spacer-Y) / 2);
+    padding-bottom: calc(var(--spacer-Y) / 2);
 }
 
 .row {
     display: flex;
     flex-wrap: wrap;
-    margin-left: calc(-1 * var(--spacer) / 2);
-    margin-right: calc(-1 * var(--spacer) / 2);
+    margin-left: calc(-1 * var(--spacer-X) / 2);
+    margin-right: calc(-1 * var(--spacer-X) / 2);
+    margin-top: calc(-1 * var(--spacer-Y) / 2);
+    margin-bottom: calc(-1 * var(--spacer-Y) / 2);
 }
 
 .col {
@@ -24,7 +29,8 @@
 }
 
 .g-0 {
-    --spacer: 0;
+    --spacer-X: 0;
+    --spacer-Y: 0;
 }
 
 .row > [class*="offset-"] {
@@ -82,8 +88,10 @@
 .col,
 .row[class*="row-cols-"] > *,
 .row > [class*="col-"] {
-    padding-left: calc(var(--spacer) / 2);
-    padding-right: calc(var(--spacer) / 2);
+    padding-left: calc(var(--spacer-X) / 2);
+    padding-right: calc(var(--spacer-X) / 2);
+    padding-top: calc(var(--spacer-Y) / 2);
+    padding-bottom: calc(var(--spacer-Y) / 2);
 }
 
 .row[class*="row-cols-"] > *,
@@ -174,7 +182,8 @@
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
     .container {
-        --spacer: 24px;
+        --spacer-X: 24px;
+        --spacer-Y: 24px;
 
         max-width: 540px;
     }
@@ -438,7 +447,8 @@
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
     .container {
-        --spacer: 30px;
+        --spacer-X: 30px;
+        --spacer-Y: 30px;
 
         max-width: 960px;
     }

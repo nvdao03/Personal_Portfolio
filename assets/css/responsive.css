@@ -45,7 +45,7 @@
 
     .fixed {
         position: sticky;
-        z-index: 1;
+        z-index: 3;
     }
 
     .navbar-mobile {
@@ -238,7 +238,7 @@
 
     .fixed {
         position: sticky;
-        z-index: 1;
+        z-index: 3;
     }
 
     .navbar-mobile {
@@ -510,6 +510,80 @@
         background-color: #5d3bee;
         outline: 1px solid #5d3bee;
         outline-offset: 0.4rem;
+    }
+
+    /* ========== Works ========== */
+    .works-body {
+        padding-top: 6.9rem;
+        padding-bottom: 6rem;
+    }
+
+    .works-row {
+        display: block;
+    }
+
+    .works-bottom {
+        margin-top: 6rem;
+    }
+
+    .works__heading {
+        width: 30.1rem;
+        color: #fff;
+        text-align: center;
+        font-size: 3.6rem;
+        font-weight: 500;
+        line-height: 1.16;
+        letter-spacing: -0.144rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .works__desc {
+        text-align: center;
+        font-size: 1.6rem;
+        line-height: 1.62;
+        margin-left: 0;
+        margin-top: 2rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .works-item_decor {
+        width: 70%;
+    }
+
+    .works-item-info__heading {
+        font-size: 2.4rem;
+        line-height: 1.41;
+        letter-spacing: -0.096rem;
+    }
+
+    .works-item-info__desc {
+        width: 17.6rem;
+        font-size: 1.4rem;
+        line-height: 1.42;
+        margin-top: 0.4rem;
+    }
+
+    .works-item-info__link {
+        font-size: 1.6rem;
+        line-height: 1.75;
+        margin-top: 0.4rem;
+    }
+
+    .works-item-media__img {
+        width: 12.2rem;
+        height: 9.3rem;
+        object-fit: cover;
+    }
+
+    .works-btn {
+        min-width: 15.4rem;
+        height: 5.6rem;
+        font-size: 1.6rem;
+        font-weight: 700;
+        line-height: 1.87;
+        padding: 1.3rem 3.3rem;
     }
 }
 

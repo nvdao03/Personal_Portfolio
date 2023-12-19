@@ -1,3 +1,3 @@
->> Developer: Nguyễn Văn Đạo
+> Developer: Nguyễn Văn Đạo
 
->> Content: Danh mục cá nhân
+> Content: Danh mục cá nhân

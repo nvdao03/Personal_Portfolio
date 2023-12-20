@@ -853,3 +853,71 @@ a {
     width: 100%;
     object-fit: cover;
 }
+
+/* ========== Project ========== */
+.project {
+    padding-top: 3rem;
+    margin-top: 8rem;
+}
+.project-content {
+    position: relative;
+    padding: 6.8rem 0;
+    background: #fbfaff;
+}
+
+.project-content__img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.project__heading {
+    font-size: 5.6rem;
+    margin-top: 2rem;
+}
+
+.project__desc {
+    width: 57rem;
+    font-size: 1.8rem;
+    margin-top: 3rem;
+}
+
+.project__heading,
+.project__desc {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.project-btn {
+    text-align: center;
+}
+
+.project-cta {
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.project-decor__left,
+.project-decor__center,
+.project-decor__right {
+    position: absolute;
+}
+
+.project-decor__left {
+    bottom: 0;
+    left: 0;
+}
+
+.project-decor__center {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100%;
+}
+
+.project-decor__right {
+    top: 0;
+    right: 0;
+}

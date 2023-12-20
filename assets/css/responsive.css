@@ -235,6 +235,23 @@
     .gallery .people-dots {
         display: none;
     }
+
+    /* ========= People ========= */
+    .project {
+        overflow: hidden;
+    }
+
+    .project-decor__left {
+        display: none;
+    }
+
+    .project-decor__center {
+        width: 100%;
+    }
+
+    .project-decor__right {
+        display: none;
+    }
 }
 
 /* Mobile */
@@ -859,6 +876,42 @@
 
     .gallery .people-dots {
         margin-top: 4rem;
+    }
+
+    /* ========= Project ========= */
+    .project {
+        background: #fbfaff;
+        padding-top: 0;
+    }
+
+    .project-content {
+        background-color: #fbfaff;
+        padding-top: 3rem;
+    }
+
+    .project-decor__left,
+    .project-decor__right {
+        display: none;
+    }
+
+    .project__heading {
+        width: 22.5rem;
+        font-size: 3.6rem;
+    }
+
+    .project__desc {
+        width: 35rem;
+        font-size: 1.6rem;
+    }
+
+    .project-btn {
+        display: inline-block;
+        min-width: 14.7rem;
+        height: 5.5rem;
+        font-size: 1.6rem;
+        font-weight: 700;
+        line-height: 1.87;
+        padding: 1.2rem 3.1rem;
     }
 }
 

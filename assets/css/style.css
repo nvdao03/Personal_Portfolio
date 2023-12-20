@@ -729,3 +729,81 @@ a {
     right: 0;
     bottom: 0;
 }
+
+/* ========== Client ========== */
+.client {
+    padding: 3rem 0;
+    margin-top: 6.5rem;
+}
+
+.client__heading {
+    width: 57.5rem;
+    font-size: 5.6rem;
+    font-weight: 500;
+    line-height: 1.17;
+    letter-spacing: -0.224rem;
+}
+
+.client-list {
+    width: 1010px;
+    margin-top: 8rem;
+}
+
+.client-item--action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.client-item--action,
+.client-item {
+    padding-left: 2.3rem;
+    padding-bottom: 2.1rem;
+    border-bottom: 1px solid #5d3bee;
+    cursor: pointer;
+}
+
+.client-item {
+    position: relative;
+    padding-top: 6rem;
+    padding-bottom: 3.3rem;
+    border-bottom: 1px solid #000;
+}
+
+.client-item__heading {
+    color: #080415;
+    font-size: 3.2rem;
+    font-weight: 500;
+    line-height: 4rem;
+    letter-spacing: -0.128rem;
+}
+
+.client-item__heading--action {
+    color: #5d3bee;
+}
+
+.client-item__desc {
+    width: 48.7rem;
+    color: #51586a;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.66;
+    margin-top: 2.3rem;
+}
+
+.client-item__icon,
+.client-item__icon--action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+}
+
+.client-item__icon {
+    position: absolute;
+    right: 0;
+    bottom: 1.1rem;
+}

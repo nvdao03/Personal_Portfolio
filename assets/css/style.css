@@ -921,3 +921,8 @@ a {
     top: 0;
     right: 0;
 }
+
+/* ========== Footer ========== */
+.footer {
+    margin-top: 5rem;
+}

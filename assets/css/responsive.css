@@ -882,6 +882,7 @@
     .project {
         background: #fbfaff;
         padding-top: 0;
+        overflow: hidden;
     }
 
     .project-content {
@@ -892,6 +893,10 @@
     .project-decor__left,
     .project-decor__right {
         display: none;
+    }
+
+    .project-decor__center {
+        height: 100%;
     }
 
     .project__heading {

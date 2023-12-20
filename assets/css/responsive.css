@@ -230,6 +230,11 @@
     .client-list {
         width: 100%;
     }
+
+    /* ========= People ========= */
+    .gallery .people-dots {
+        display: none;
+    }
 }
 
 /* Mobile */
@@ -823,6 +828,37 @@
 
     .client-item__img-action {
         height: 0.2rem;
+    }
+
+    /* ========== Gallery ========== */
+    .gallery {
+        margin-top: 6rem;
+    }
+
+    .gallery-top__heading {
+        font-size: 3.6rem;
+    }
+
+    .gallery-top__desc {
+        width: 35rem;
+        font-size: 1.6rem;
+        line-height: 1.62;
+        margin-top: 2rem;
+    }
+
+    .gallery-top__link {
+        font-size: 2rem;
+        margin-top: 1rem;
+    }
+
+    .gallery-list {
+        overflow: hidden;
+        margin-top: 6rem;
+        flex-wrap: nowrap;
+    }
+
+    .gallery .people-dots {
+        margin-top: 4rem;
     }
 }
 

@@ -807,3 +807,49 @@ a {
     right: 0;
     bottom: 1.1rem;
 }
+
+/* ========== Gallery ========== */
+.gallery {
+    padding: 3rem 0;
+    margin-top: 10rem;
+}
+
+.gallery-top__heading {
+    font-size: 5.6rem;
+}
+
+.gallery-top__desc {
+    width: 52.8rem;
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-top: 2rem;
+}
+
+.gallery-top__link {
+    display: block;
+    color: #5d3bee;
+    font-size: 3.2rem;
+    font-weight: 500;
+    line-height: 4rem; /* 125% */
+    letter-spacing: -0.128rem;
+    text-decoration-line: underline;
+    margin-top: 3rem;
+    cursor: pointer;
+}
+
+.gallery-top__heading,
+.gallery-top__desc,
+.gallery-top__link {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gallery-list {
+    margin-top: 7rem;
+}
+
+.gallery-media__img {
+    width: 100%;
+    object-fit: cover;
+}

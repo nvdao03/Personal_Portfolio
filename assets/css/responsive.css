@@ -143,6 +143,7 @@
     }
 
     .hero-info__desc {
+        width: 31rem;
         margin-left: auto;
         margin-right: auto;
     }
@@ -199,6 +200,14 @@
     /* ========= Specialities ========= */
     .dots-mobile {
         display: none;
+    }
+
+    .about-stats__quantity {
+        font-size: 5rem;
+    }
+
+    .about-stats__desc {
+        font-size: 1.6rem;
     }
 }
 
@@ -350,6 +359,7 @@
     }
 
     .hero-info__desc {
+        width: 31rem;
         color: #51586a;
         font-size: 1.6rem;
         font-weight: 400;
@@ -539,6 +549,7 @@
     }
 
     .works__desc {
+        width: 35rem;
         text-align: center;
         font-size: 1.6rem;
         line-height: 1.62;
@@ -584,6 +595,84 @@
         font-weight: 700;
         line-height: 1.87;
         padding: 1.3rem 3.3rem;
+    }
+
+    /* ========== About ========== */
+    .about {
+        padding-top: 12rem;
+        background-image: linear-gradient(to bottom, #fff 82%, #fbfaff 82%);
+    }
+
+    .about-top-intro__text {
+        font-size: 2rem;
+        font-weight: 500;
+        line-height: 4rem;
+        letter-spacing: -0.08rem;
+    }
+
+    .about__heading {
+        font-size: 3.6rem;
+        font-weight: 500;
+        letter-spacing: -0.144rem;
+        margin-top: 1rem;
+    }
+
+    .about__desc {
+        width: 35rem;
+        color: #51586a;
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 1.62;
+        margin-top: 2rem;
+    }
+
+    .about-stats {
+        padding: 3rem 0;
+        margin-top: 5rem;
+        column-gap: 5rem;
+    }
+
+    .about-stats__item:nth-child(1) {
+        order: 1;
+    }
+
+    .about-stats__item:nth-child(3) {
+        order: 3;
+    }
+
+    .about-stats__item:nth-child(3) {
+        order: 2;
+    }
+
+    .about-stats__quantity {
+        font-size: 3rem;
+        font-weight: 500;
+        line-height: 4.2rem;
+        letter-spacing: 0.09rem;
+    }
+
+    .about-stats__desc {
+        width: 7.4rem;
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 1.37;
+    }
+
+    .about-stats::before,
+    .about-stats::after {
+        width: 35rem;
+    }
+
+    .video-container-intro {
+        width: 11.8rem;
+        height: 4.4rem;
+    }
+
+    .video-container-intro__text {
+        font-size: 1.2rem;
+        font-weight: 700;
+        line-height: 3rem;
+        padding: 0.7rem 2.1rem;
     }
 }
 
